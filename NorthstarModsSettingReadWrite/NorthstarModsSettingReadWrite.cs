@@ -38,6 +38,7 @@ public static partial class NsModsSettingReadWrite
                     File.ReadAllText(Path.Combine(directory, "mod.json")), SourceGenOptions);
                 existEnabledMods.TryGetValue(mod.Name, out bool enabled);
                 mod.Enabled = enabled;
+                mod.Path = directory;
                 modJsons.Add(mod);        
             }
         }
@@ -82,10 +83,13 @@ public static partial class NsModsSettingReadWrite
         public int LoadPriority{ get; set; }
         
         [JsonPropertyName("Image")]
-        public string? Image{ get; set; }
+        public string[]? Image{ get; set; }
 
         [JsonIgnore]
         public bool Enabled { get; set; } = true;
+        
+        [JsonIgnore]
+        public string Path { get; set; }
     }
     
     [JsonSourceGenerationOptions(WriteIndented = true)]
