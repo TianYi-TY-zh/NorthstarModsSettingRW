@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthstarModsReadWrite", "NorthstarModsReadWrite\NorthstarModsReadWrite.csproj", "{897E57D4-7028-4940-B47B-3E522AAAD5AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthstarModsSettingReadWrite", "NorthstarModsSettingReadWrite\NorthstarModsSettingReadWrite.csproj", "{897E57D4-7028-4940-B47B-3E522AAAD5AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

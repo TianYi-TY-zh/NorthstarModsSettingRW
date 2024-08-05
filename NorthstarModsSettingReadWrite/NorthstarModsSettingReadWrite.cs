@@ -6,9 +6,9 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Text.Unicode;
 
-namespace NorthstarModsReadWrite;
+namespace NorthstarModsSettingReadWrite;
 
-public static partial class NsModsReadWrite
+public static partial class NsModsSettingReadWrite
 {
     
     public static JsonSerializerOptions SourceGenOptions = new JsonSerializerOptions
